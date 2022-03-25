@@ -1,0 +1,44 @@
+body{
+    font-family: 'Lato';
+    // font-weight: 400;
+    // font-style: normal;
+    // font-size: 14px;
+    // line-height: 17px;
+    @include font(14px, 17px);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+    @include tablet{
+        width: 92%;
+    }
+    @include mobile{
+        width: 91%;
+    }
+} 
+
+// @media(max-width: $tablet-width){
+//     .container{
+//         width: 92%;
+//     }
+// }
+// @media(max-width: $mobile-width){
+//     .container{
+//         width: 91%; 
+//     }
+// }

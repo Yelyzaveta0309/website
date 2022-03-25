@@ -1,0 +1,169 @@
+.footer{
+    
+    width: 100%;
+
+    .footer__subscription{
+        height: 448px;
+        background-image:url('../images/photo_subscribe.jpg');
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-around;
+
+        @include tablet{
+            display: block;
+        }
+    }
+    
+    .footer__subscription-info-wrp {
+        margin-top: 110px;
+        text-align: center;
+        width: 360px;
+    }
+    
+    .footer__subscription-text {
+        font-size: 20px; 
+        line-height: 24px;
+        font-weight: normal;
+        @include mobile{
+            @include font(19px, 22px);
+        }
+    }
+
+    .footer__subscription-sub-text {
+        @include font(20px, 24px);
+        font-style: italic;
+        font-weight: normal;
+        @include mobile{
+            @include font(19px, 22px);
+        }
+    }
+
+    .footer__subscription-form-info-wrp {
+        width: 557px;
+        height: 61px;
+        margin-top: 150px;
+
+        @include tablet{
+            margin: 48px 120px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include mobile{
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    .footer__subscription__form-info-title {
+        @include font(24px, 40px, 700);
+        font-weight: bold;
+        text-align: center;
+        @include mobile{
+            @include font(24px, 36px);
+            margin-top: 59px;
+        }
+    }
+
+    .footer__subscription__form-info-text {
+        font-size: 18px;
+        line-height: 30px;
+        @include font(18px, 30px);
+        text-align: center;
+        @include mobile{
+            @include font(14px, 21px);
+        }
+    }
+
+    .footer__subscription__form{
+        margin-top: 32px;
+        margin-left: 105px;
+        display: flex;
+
+        @include mobile{
+            margin: 0;
+            width: 200px;
+        }
+    }
+
+    .footer__subscription__form-email{
+        height: 37px;
+        width: 215px;
+        border: none;
+        padding: 5px 20px;
+        background: #E1E1E1;
+        border-radius: 22px 0px 0px 22px;
+
+        @include mobile{
+            width: 194px;
+            margin-left: 37px;
+            margin-top: 59px;
+        }
+    }
+
+    .footer__subscription-button{
+        border-radius: 0px 22px 22px 0px;
+        border: none;
+        height: 47px;
+        width: 93px;
+        background: #F16D7F;
+        font-size: 14px;
+        color: #ffff;
+        @include mobile{
+            width: 194px;
+            margin-top: 59px;
+        }
+    }
+    
+    .footer__copyright {
+        height: 79px;
+        width: 100%;
+        background-color:  #222224;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include tablet{
+            width: 100%;
+        }
+        @include mobile{
+            flex-direction: column-reverse;
+            height: 143px;
+        }
+
+    }
+
+    .footer__copyright-text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        @include font(16px, 19px);  
+        
+        @include mobile{
+            margin-top: 40px;
+        }
+    }
+
+    .footer__copyright-button {
+        margin-top: 24px;
+        padding: 0px 0px 0px 0px;
+        border: none;
+        height: 32px;
+        background-color: #FFFFFF;
+    }
+    
+    .footer__copyright-button:hover{
+        background-color: $pink-price;
+    }
+
+    .footer__copyright-button:hover .footer__copyright-button-letter{
+        fill: #FFFFFF;
+    }
+    
+    .footer__copyright-button:hover .footer__copyright-button-bkg{
+        fill: $pink-price;
+    }
+    
+    .footer__copyright-text-wrp{
+        padding-top: 30px;
+    }
+}

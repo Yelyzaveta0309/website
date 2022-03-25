@@ -1,0 +1,122 @@
+.products{
+    
+    text-align: center;
+    margin-top: 96px;
+    width: 100%;
+    
+    .products__title{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: normal;
+        color: $black;
+    }
+    .products__text{
+        font-size: 14px;
+        color: $grey-text;
+        margin-top: 6px;
+    }
+    
+    .products__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 48px;
+        @include tablet{
+            justify-content: center;
+        }
+    }
+    .products__item{
+        width: 360px;
+        height: 581px;
+        position: relative;
+
+        @include tablet{
+            width: 359px;
+            justify-content: center;
+        }
+    }
+    .products__info-wrp{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 26px;
+        padding-left: 17px;
+        text-align: left;
+        height: 117px;
+        width: 314px;
+        @include tablet{
+            width: 100%;
+        }
+    }
+    
+    .products__item-title{
+        font-size: 13px;
+    }
+    
+    .products__item-desc{
+        color: $darkgrey-text;
+        font-weight: 300;
+        font-size: 14px;
+        width: 309px;
+    }
+    
+    .products__item-price{
+        color: $pink-price;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .products__button{
+        border: 1px solid #FF6A6A;
+        width: 211px;
+        height: 47px;
+        margin-top: 48px;
+        background-color: white;
+        color: $pink-buttont-text;
+        line-height: 19px;
+        font-size: 16px;
+    }
+    
+    .products__button:hover{
+        background-color: $pink-price;
+        color: #FFFFFF;
+    }
+    
+    .product__item-button{
+        width: 138px;
+        min-height: 43px;
+        border: 1px solid #FFFFFF;
+        background: none;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .overlay{
+        position: absolute;
+        background-image: url('../images/overlay.png');
+        top: 0;
+        width: 100%;
+        min-height: 420px;
+    }
+    .p_button_photo {
+        margin-left: -80px;
+    }
+    .b_span {
+        color: #FFFFFF; 
+        position: absolute;
+        margin-top: 6px;
+        margin-left: 15px;  
+    }
+    
+     .product__item-button,
+    .overlay{
+        display: none;
+    }
+    
+    .products__item:hover .overlay,
+    .products__item:hover .product__item-button{
+        display: block;
+    }
+}
