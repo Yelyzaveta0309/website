@@ -587,6 +587,9 @@ body {
     margin-top: 59px;
   }
 }
+.footer .footer__subscription__form-email-height {
+  height: 47px;
+}
 .footer .footer__subscription-button {
   border-radius: 0px 22px 22px 0px;
   border: none;
