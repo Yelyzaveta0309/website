@@ -1,0 +1,100 @@
+a:link {
+    color: #636363;
+    text-decoration: none;
+}
+a:visited{
+    color: #636363;
+}
+a:hover{
+    border-bottom: 1px solid #636363;
+    color: #636363;
+}
+
+
+.products__info{
+    
+    .products__info-carousel{
+        height: 777px;
+    }
+    
+    .products__info-carousel-photo{
+        height: 724px;
+        object-fit: contain;
+    }
+    
+    .products__info__item {
+        @include size(1141px,601px);
+        text-align: center;
+        padding: 65px 0px;
+        margin: 0px 60px;
+        border: 1px solid #EAEAEA;
+        top: -65px;
+        position: relative;
+        background: #FFFFFF;
+    }
+    .products__info__item-title {
+        @include font(14px, 17px,300);
+        margin-bottom: 0;
+        color: $pink-price;
+        text-transform: uppercase;
+    }
+    .products__info__item-line-first {
+        width: 63px;
+        height: 3px;
+        @include size(63px,3px);
+        margin: 12px 540px;
+        background: $pink-product;
+    }
+    .products__info__item-name {
+        @include font(18px, 22px,300);
+        color: #4D4D4D;
+        text-transform: uppercase;
+    }
+    .products__info__item-desc {
+        width: 534px;
+        margin-top: 48px;
+        margin-left: 292px;
+        @include font(14px, 17px,300);
+        color: #5E5E5E;
+    }
+    .products__info__item-price {
+        @include font(24px, 29px,300);
+        margin-top: 32px;
+        color: $pink-product;
+    }
+    .products__info__item-line-second {
+        width: 641px;
+        margin: 65px 250px;
+        border: 1px solid #b1b1b166;
+        opacity: 0.1;
+    }
+    .products__info__item-dropdowns {
+        @include font(14px, 17px,400);
+        @include flex-center;
+        color: $grey-dropdown;
+    }
+    .dropdown__button-text{
+        text-transform: uppercase;
+        @include font(14px, 17px,400);
+        color: $grey-dropdown;
+    }
+    .products__info__item-button{
+        @include size(211px,47px);
+        @include font(16px, 19px,400);
+        margin-top: 17px;
+        color: $pink-buttont-text;
+        padding: 14px 56px 8px 23px;
+        border: 1px solid #FF6A6A;
+        background-color: #FFFFFF;
+    }
+    .products__info__item-button-photo {
+        position: relative;
+        bottom: 2px;
+        left: -7px;
+    }
+    .products__info__item-button-span {
+        position: relative;
+        bottom: 2px;
+        right: -9px;
+    }
+}

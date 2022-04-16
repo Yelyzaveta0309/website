@@ -4,6 +4,10 @@
     font-weight: $font-weight;
     font-style: $font-style;
 }
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
 @mixin flex-center {
     display: flex;
     justify-content: center;
