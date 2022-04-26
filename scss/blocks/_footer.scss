@@ -4,26 +4,37 @@
 
     .footer__subscription{
         height: 448px;
-        background-image:url('../images/photo_subscribe.jpg');
         background-repeat: no-repeat;
         display: flex;
         justify-content: space-around;
-
+        background-image:url('../images/photo_subscribe.jpg');
+        
         @include tablet{
             display: block;
+            height: 614px;
+            // background-image:url('../images/p-subscribe.jpg');
+            background-size: cover;
+        }
+        @include mobile{
+            height: 550px;
         }
     }
     
     .footer__subscription-info-wrp {
-        margin-top: 110px;
-        text-align: center;
         width: 360px;
+        padding-top: 86px;
+        text-align: center;
+        @include tablet{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 53px;
+        }
     }
     
     .footer__subscription-text {
-        font-size: 20px; 
-        line-height: 24px;
-        font-weight: normal;
+        margin-top: 40px;
+        @include font(20px, 24px);
         @include mobile{
             @include font(19px, 22px);
         }
@@ -32,36 +43,34 @@
     .footer__subscription-sub-text {
         @include font(20px, 24px);
         font-style: italic;
-        font-weight: normal;
         @include mobile{
             @include font(19px, 22px);
         }
     }
 
     .footer__subscription-form-info-wrp {
-        width: 557px;
-        height: 61px;
-        margin-top: 150px;
+        width: 350px;
+        height: 150px;
+        padding-top: 150px;
 
         @include tablet{
-            margin: 48px 120px;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+            padding-top: 65px;
         }
         @include mobile{
-            margin: 0 auto;
-            width: 100%;
+            padding-top: 60px;
         }
     }
 
     .footer__subscription__form-info-title {
         @include font(24px, 40px, 700);
-        font-weight: bold;
         text-align: center;
+      
         @include mobile{
-            @include font(24px, 36px);
-            margin-top: 59px;
+            @include font(24px, 37px, 700);
+            // margin-top: 59px;
         }
     }
 
@@ -70,35 +79,35 @@
         line-height: 30px;
         @include font(18px, 30px);
         text-align: center;
-        @include mobile{
-            @include font(14px, 21px);
-        }
+      
+        // @include mobile{
+        //     @include font(14px, 21px);
+        // }
     }
 
     .footer__subscription__form{
         margin-top: 32px;
-        margin-left: 105px;
         display: flex;
 
-        @include mobile{
-            margin: 0;
-            width: 200px;
-        }
+        // @include mobile{
+        //     margin: 0;
+        //     width: 200px;
+        // }
     }
 
     .footer__subscription__form-email{
-        height: 37px;
-        width: 215px;
+        height: 39px;
+        width: 214px;
         border: none;
         padding: 5px 20px;
         background: #E1E1E1;
         border-radius: 22px 0px 0px 22px;
 
-        @include mobile{
-            width: 194px;
-            margin-left: 37px;
-            margin-top: 59px;
-        }
+        // @include mobile{
+        //     width: 194px;
+        //     margin-left: 37px;
+        //     margin-top: 59px;
+        // }
     }
     .footer__subscription__form-email-height{
         height: 47px;
@@ -107,15 +116,11 @@
     .footer__subscription-button{
         border-radius: 0px 22px 22px 0px;
         border: none;
-        height: 47px;
-        width: 93px;
+        height: 49px;
+        width: 100px;
         background: #F16D7F;
         font-size: 14px;
         color: #ffff;
-        @include mobile{
-            width: 194px;
-            margin-top: 59px;
-        }
     }
     
     .footer__copyright {
@@ -125,9 +130,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        @include tablet{
-            width: 100%;
-        }
+       
         @include mobile{
             flex-direction: column-reverse;
             height: 143px;
@@ -148,7 +151,7 @@
 
     .footer__copyright-button {
         margin-top: 24px;
-        padding: 0px 0px 0px 0px;
+        padding: 0px;
         border: none;
         height: 32px;
         background-color: #FFFFFF;

@@ -1,11 +1,25 @@
 .registration__info
 {
     display: flex;
-    padding: 64px;
-    justify-content: space-between;
-    
+    padding-top: 64px;
+    padding-bottom: 96px;
+    justify-content: space-evenly;
+
+    @include tablet{
+        padding-top: 40px;
+    }
+    @include mobile{
+        display: block;
+        padding: 40px 9px 96px 9px;
+    }
     .registration{
         width: 360px;
+        @include mobile{
+            padding: 0px 4px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     
     legend{
@@ -81,9 +95,19 @@
         margin-right: 20px;
         text-transform: uppercase;
     }
-    
-    .perks {
-        width: 652px;
+
+    .perks{
+        width: 610px;
+        @include tablet{
+            width: 347px;
+        }
+        @include mobile{
+            margin-top: 40px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
     }
     .perks__title {
         font-weight: 300;
@@ -91,6 +115,11 @@
         line-height: 29px;
         color: #000000;
         text-transform: uppercase;
+
+        @include tablet{
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
     .perks__text {
         font-weight: 300;
@@ -98,11 +127,22 @@
         line-height: 29px;
         color: #000000;
         padding-top: 22px;
+        @include tablet{
+            font-size: 16px;
+            line-height: 19px;
+            padding-top: 32px;
+        }
     }
     .perks__list {
         list-style: none;
         padding-top: 5px;
         padding-left: 44px;
+        @include tablet{
+            width: 300px;
+        }
+        @include mobile{
+            width: 300px;
+        }
     }
     .perks__list-item {
         font-weight: 300;
@@ -111,6 +151,10 @@
         color: #000000;
         position: relative;
         padding-top: 16px;
+        @include tablet{
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
     
     .perks__list-item:before{
@@ -123,6 +167,10 @@
         background-image: url('../images/perks_img.svg');
         background-repeat: no-repeat;
         background-size: 20px 15px;
+
+        @include tablet{
+            top: 19px;
+        }
     }
 }
 

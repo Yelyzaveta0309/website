@@ -10,5 +10,13 @@
         padding-top: 59px;
         padding-left: 88px;
         color: $pink-price;
+
+        @include tablet{
+            padding-left: 16px;
+        }
+        @include mobile{
+            padding: 60px 92px;
+        }
     }
+
 }

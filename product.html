@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 </head>
-<body>    
+<body>
     <header class="header">
         <div class="container">
             <div class="header__wrp">
@@ -67,16 +67,16 @@
         </div>
     </header>
     <main>
-        <section class="products__title">
-            <h1 class="products__title-text">new arrivals</h1>
-            <nav class="products__title-nav" aria-label="breadcrumb">
+        <section class="product__title">
+            <h1 class="product__title-text">new arrivals</h1>
+            <nav class="product__title-nav" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item breadcrumb-text"><a class="breadcrumb-link" href="#">home</a></li>
                   <li class="breadcrumb-item breadcrumb-text"><a class="breadcrumb-link" href="#">man</a></li>
-                  <li class="breadcrumb-item breadcrumb-text active" aria-current="page">new arrivals</li>
+                  <li class="breadcrumb-text breadcrumb-item active " aria-current="page">new arrivals</li>
                 </ol>
-              </nav>
-        </section>
+            </nav>
+        </section>     
         <section class="products__info">
             <div id="carouselExampleControls" class="carousel slide products__info-carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -88,7 +88,7 @@
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -144,11 +144,54 @@
                 </button>
             </div>
         </section>
+        <section class="proposed_products">
+            <ul class="products__list">
+                <li class="products__item">
+                    <img class="products__item-img" src="images/product4.png" alt="product-4">
+                    <div class="overlay"></div>
+                    <button class="product__item-button">
+                        <img class="p_button_photo" src="images/product-button.svg" alt="photo">
+                        <span class="b_span">Add to Cart</span>
+                    </button>
+                    <div class="products__info-wrp">
+                        <h3 class="products__item-title">ELLERY X M'O CAPSULE</h3>
+                        <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </div>
+                </li>
+                 <li class="products__item">
+                    <img class="products__item-img" src="images/product3.png" alt="product-3">
+                    <div class="overlay"></div>
+                    <button class="product__item-button">
+                        <img class="p_button_photo" src="images/product-button.svg" alt="photo">
+                        <span class="b_span">Add to Cart</span>
+                    </button>
+                    <div class="products__info-wrp">
+                        <h3 class="products__item-title">ELLERY X M'O CAPSULE</h3>
+                        <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </div>
+                </li>
+                 <li class="products__item item-none">
+                    <img class="products__item-img" src="images/product6.png" alt="product-6">
+                    <div class="overlay"></div>
+                    <button class="product__item-button">
+                        <img class="p_button_photo" src="images/product-button.svg" alt="photo">
+                        <span class="b_span">Add to Cart</span>
+                    </button>
+                    <div class="products__info-wrp">
+                        <h3 class="products__item-title">ELLERY X M'O CAPSULE</h3>
+                        <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__item-price">$52.00</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__subscription">
             <div class="footer__subscription-info-wrp">
-                <img class="footer__subscription-img" src="images/photo-woman.jpg" alt="photo-woman">
+                <img class="footer__subscription-img" src="images/Intersect.png" alt="photo-woman">
                 <p class="footer__subscription-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="footer__subscription-sub-text">a pulvinar purus condimentum“</span></p>
             </div>
             <div class="footer__subscription-form-info-wrp">
@@ -156,10 +199,10 @@
                     <p class="footer__subscription__form-info-title">SUBSCRIBE</p>
                     <p class="footer__subscription__form-info-text">FOR OUR NEWLETTER AND PROMOTION</p>
                 </div>
-                <form class="footer__subscription__form" action="">
+                <form class="footer__subscription__form">
                     <div>
                         <label>
-                            <input class="footer__subscription__form-email footer__subscription__form-email-height" type="email" placeholder="Enter Your Email" required>
+                            <input class="footer__subscription__form-email" type="email" placeholder="Enter Your Email" required>
                             <span class="visually-hidden">email</span>
                         </label>
                     </div>
@@ -220,7 +263,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
