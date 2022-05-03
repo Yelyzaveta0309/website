@@ -9,7 +9,7 @@
         padding: 0 0 0 80px;
         background-color: $pink-bkg;
         flex-grow: 1;
-        position: relative;
+        //position: relative;
         @include tablet{
             width: 50%;
             height: 368px;
@@ -17,7 +17,7 @@
     }
     .brand__title-wrp::after{
         content: '';
-        position: absolute;
+        position: relative;
         width: 12px;
         height: 92px;
         background: #F16D7F;

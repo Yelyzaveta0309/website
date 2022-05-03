@@ -68,14 +68,24 @@
     }
 
     .header__basket__table{
+        
         width: 300px;
-        height: 100px;
-        background-color: rgb(186, 135, 135);
+        height: fit-content;
+        background-color: rgb(255, 255, 255);
         display: none;
-        position: relative;
-        border: 3px solid rgb(88, 220, 78) ;
+        position: absolute;
+        top: 54px;
+        right: 82px;
+        border-radius: 2px;
     }
 
+    .basket-total-text{
+        font-weight: bold;
+        text-align: right;
+    }
+    .basket-total{
+        text-align: right;
+    }
     .product_id{
         display: none;
     }

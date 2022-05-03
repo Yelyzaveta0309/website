@@ -3,6 +3,7 @@ let basketButton = document.querySelector(".basket-button");
 let buttons = document.querySelectorAll(".product__item-button");
 let basketTable = document.querySelector(".basket_table");
 let basketTablediv = document.querySelector(".header__basket__table");
+let basketTotal = document.querySelector(".basket-total");
 
 
 let orders;
@@ -25,6 +26,7 @@ buttons.forEach(element => {
                                                             <td>${priceProduct}</td>
                                                             <td class="totalpriceProduct">${priceProduct}</td>
                                                         </tr>`);
+            basketTotal.innerText = priceProduct;
             alert("add!");
         }
         else{
@@ -38,6 +40,7 @@ buttons.forEach(element => {
                         basketCount.textContent++;
                         item.parentNode.querySelector(".countProduct").innerText++;
                         item.parentNode.querySelector(".totalpriceProduct").innerText = Number(item.parentNode.querySelector(".totalpriceProduct").innerText) + Number(priceProduct);
+                        basketTotal.innerText = Number(basketTotal.innerText) + Number(priceProduct);
                     }
                 }
                 else if(!neworders.includes(idButtonProduct)){
@@ -50,6 +53,7 @@ buttons.forEach(element => {
                                                                     <td class="priceProduct">${priceProduct}</td>
                                                                     <td class="totalpriceProduct">${priceProduct}</td>
                                                                 </tr>`);
+                    basketTotal.innerText = Number(basketTotal.innerText) + Number(priceProduct);
                 }
             })
         }

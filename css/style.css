@@ -152,11 +152,20 @@ body {
 }
 .header .header__basket__table {
   width: 300px;
-  height: 100px;
-  background-color: #ba8787;
+  height: fit-content;
+  background-color: white;
   display: none;
-  position: relative;
-  border: 3px solid #58dc4e;
+  position: absolute;
+  top: 54px;
+  right: 82px;
+  border-radius: 2px;
+}
+.header .basket-total-text {
+  font-weight: bold;
+  text-align: right;
+}
+.header .basket-total {
+  text-align: right;
 }
 .header .product_id {
   display: none;
@@ -172,7 +181,6 @@ body {
   padding: 0 0 0 80px;
   background-color: #F1E4E6;
   flex-grow: 1;
-  position: relative;
 }
 @media (max-width: 1199px) {
   .brand .brand__title-wrp {
@@ -182,7 +190,7 @@ body {
 }
 .brand .brand__title-wrp::after {
   content: "";
-  position: absolute;
+  position: relative;
   width: 12px;
   height: 92px;
   background: #F16D7F;
