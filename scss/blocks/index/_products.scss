@@ -15,7 +15,9 @@
         color: $grey-text;
         margin-top: 6px;
     }
-    
+    .product__item-button:hover{
+        background-color: $pink-buttont-text;
+    }
     .products__list{
         display: flex;
         flex-wrap: wrap;
